@@ -143,8 +143,8 @@ class BudgetTest(TestCase):
         """ Correct functioning of the api when we want to request a category suggestion for an identifier"""
         contentbase = ContentBased()
         category_suggest = contentbase.predict("quiero quitar la bañera y poner una mampara con un plato de ducha")
-        self.assertEqual(category_suggest, "reformas baños")
+        self.assertIn("reformas baños", category_suggest)
 
         response = self.client.get('/api/1.0/suggest_budget/%s/' % self.UUID2)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.data['category_suggest'], "construcción casas")
+        self.assertIn( "construcción casas", response.data['categories_suggest'])

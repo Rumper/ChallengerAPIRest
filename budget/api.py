@@ -241,7 +241,7 @@ class BudgetSuggest(APIView, Utils):
 
         if category_suggest:
             context = {
-                'category_suggest': category_suggest.lower()
+                'categories_suggest': category_suggest
             }
             return Response(context, status=status.HTTP_200_OK)
         else:
