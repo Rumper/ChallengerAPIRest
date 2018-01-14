@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-14 18:35+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\Challenger\settings.py:125
+msgid "English"
+msgstr "Inglés"
+
+#: .\Challenger\settings.py:126
+msgid "Spanish"
+msgstr "Español"
+
+#: .\budget\api.py:21
+#, python-format
+msgid "Parameter no permit: <<%s>>"
+msgstr "Parametro no permitido: <<%s>>"
+
+#: .\budget\api.py:99
+msgid "The budget has been created"
+msgstr "El presupuesto ha sido creado"
+
+#: .\budget\api.py:139
+msgid "The budget already is published"
+msgstr "El presupuesto ya esta publicado"
+
+#: .\budget\api.py:141
+msgid "The budget already is discarded"
+msgstr "El presupuesto ya esta descartado"
+
+#: .\budget\api.py:155
+#, python-format
+msgid "The '%s' is empty, you should modify your budget"
+msgstr "'%s' es nulo, debes modificar tu presupuesto"
+
+#: .\budget\api.py:159
+msgid "title"
+msgstr "título"
+
+#: .\budget\api.py:162
+msgid "category"
+msgstr "categoría"
+
+#: .\budget\api.py:169
+msgid "The budget has been published"
+msgstr "El presupuesto ha sido publicado"
+
+#: .\budget\api.py:189
+msgid "The budget has been modify"
+msgstr "El presupuesto ha sido modificado"
+
+#: .\budget\api.py:204
+msgid "The budget has already been discarded"
+msgstr "El presupuesto ha sido ya descartado"
+
+#: .\budget\api.py:209
+msgid "The budget has been discarded"
+msgstr "El presupuesto ha sido descartado"
+
+#: .\budget\api.py:241
+msgid "No found recommendation category by this description"
+msgstr "No encontrado una recomendación de categoría para esta descripción"
+
+#: .\budget\choices.py:9
+msgid "Published"
+msgstr "Publicado"
+
+#: .\budget\choices.py:10
+msgid "Pending"
+msgstr "Pendiente"
+
+#: .\budget\choices.py:11
+msgid "Discarded"
+msgstr "Descartado"
+
+#: .\budget\content_based.py:27
+#, python-format
+msgid "File no found %s"
+msgstr "Fichero no econtrado en %s"
+
+#: .\budget\models.py:51
+msgid "Exist budget with this uuid"
+msgstr "Existe un presupuesto con este uuid"

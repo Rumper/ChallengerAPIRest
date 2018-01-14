@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>Bienvenido a la API desarrollada</h2>
+    <h3>Realizado por José Ismael Jiménez Ortiz</h3>
+
+    <div>
+        <h2> Urls habilitadas</h2>
+        <ul>
+            {% for api in urls %}
+                <li>URL - {{ api.url }}         | METHOD - {{ api.method }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
