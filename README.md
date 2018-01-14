@@ -101,6 +101,7 @@ Descarta la solicitud de presupuesto identificado por _uuid_ pasado en la url. S
 
 ### /api/1.0/suggest_budget/_uuid_/
 
+METHOD GET
 Sugiere una categoria o varias para la solicitud de presupuesto por el identificador _uuid_ pasado en la url
 
 ## License
