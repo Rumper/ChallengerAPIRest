@@ -1,50 +1,51 @@
-# Título del proyecto
+# ChallengerAPIRest
 
-Creación de una api simple, para mostrar conocimiento en un Challenge
+Creation of a simple api, to show knowledge in a Challenge
 
+## Installation
 
-## Instalación
-
-Necesario tener Python 3.5 o mayor
+Necessary to have Python 3.5 or higher
 
     $ git clone https://github.com/Rumper/ChallengerAPIRest.git
 
-Creamos maquina virtual
+Create virtual machine
 
-(En caso de no tenerlo installarlo)
+(In case of not having it installed)
 
     $ sudo pip install virtualenv
 
-Una vez obtenido virtualenv
+Once obtained virtualenv
 
     $ cd ChallengerAPIRest
     $ virtualenv Challenger
     $ source bin/activate
 
-Instalamos dependencias
+Install dependencies
 
     (Challenger)$ pip install -r config/requeriments.txt
 
-Creamos Base de datos
+Create Database
 
     (Challenger)$ python manage.py makemigrations
     (Challenger)$ python manage.py migrate
 
-Si quiere crear super usuario
+If you want to create superuser but it isn't necessary
 
     (Challenger)$ python manage.py createsuperuser
 
-Ya esta listo para su funcionamiento
+It is ready for operation
 
     (Challenger)$ python manage.py runserver
 
+I recommend running the tests
+
 ## Test
 
-Aplicar el siguiente comando para ejecutar los test:
+Apply the following command to execute the tests
 
     (Challenger)$ python manage.py -test
 
-Si se quiere ejecutar con más detalles:
+If you want to run with more details
 
     (Challenger)$ python manage.py -test -v 2
 
@@ -54,57 +55,64 @@ Si se quiere ejecutar con más detalles:
 ### /api/1.0/budgets/
 
 METHOD POST
-Crea una nueva solicitud en el sistema, si el email no esta registrado se crea nuevo usuario,
-se actualiza sus teléfono o dirección
-Ejemplo
+
+Create a new request in the system, if the email is not registered a new user is created,
+your phone or address is updated
+
+####Example
 
 
     {
-      'title': 'Título de la solicitud del presupuesto' (opcional),
-      'descripción': 'Descripción de la solicitud del presupuesto',
-      'category: 'Categoría de la solicitud del presupuesto' (opcional),
-      'email': 'Email del ususario',
-      'phone': 'Teléfono del usuario',
-      'address': 'Dirección del usuario'
+      'title': 'Title of the budget request' (optional)),
+      'description': 'Description of the budget request',
+      'category: 'Category of the budget request '(optional),
+      'email': 'User's email',
+      'phone': 'User's phone',
+      'address': 'User's address'
     }
 
 METHOD GET
-Solicita todo los email del sistema
+
+Request all system emails
 
 ### /api/1.0/budgets/_email_/
 
 METHOD GET
-Solicita todo los email que hay en el sistema con ese usuario que tenga dicho _email_ pasado en la url
 
+Request all the emails that are in the system with that user who has said _email_ last in the url
 
 ### /api/1.0/budget/
 
 METHOD POST
-Actualiza el título, descripción o categoría de la solicitud de presupuesto identificada por el uuid
+
+Update the title, description or category of the budget request identified by the uuid
+
+#### Example
 
     {
-       'uuid': 'identifacador de la solicitud de presupuesto',
-       'title': 'Título de la solicitud del presupuesto' (opcional),
-       'descripción': 'Descripción de la solicitud del presupuesto' (opcional),
-       'category: 'Categoría de la solicitud del presupuesto' (opcional),
+       'uuid': 'Budget request identifier',
+       'title': 'Title of the budget request' (optional),
+       'descripción': 'Description of the budget request' (optional),
+       'category: 'Category of the budget request '(optional),
     }
 
 
 ### /api/1.0/budget/_uuid_/
 
 METHOD PUT
-Publica la solicitud de presupuesto identificado por _uuid_ pasado en la url. Si es validado, en caso contrario informa de error.
+
+Publish the budget request identified by _uuid_ passed in the url. If it is validated, otherwise it reports error.
 
 METHOD DELETE
-Descarta la solicitud de presupuesto identificado por _uuid_ pasado en la url. Si es validado, en caso contrario informa de error.
 
+Discard the budget request identified by _uuid_ passed in the url. If it is validated, otherwise it reports error.
 
 ### /api/1.0/suggest_budget/_uuid_/
 
 METHOD GET
-Sugiere una categoria o varias para la solicitud de presupuesto por el identificador _uuid_ pasado en la url
+
+Suggest a category or several for the budget request by the identifier _uuid_ passed in the url
 
 ## License
 
-Este proyecto esta sujeto a la lincencia GPLv3 ver más en LINCENSE
-
+This project is subject to the GPLv3 license see more in LINCENSE
