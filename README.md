@@ -6,38 +6,39 @@ Creación de una api simple, para mostrar conocimiento en un Challenge
 ## Instalación
 
 Necesario tener Python 3.5 o mayor
-
+'''
 $ git clone https://github.com/Rumper/ChallengerAPIRest.git
-
+'''
 Creamos maquina virtual
 
 (En caso de no tenerlo installarlo)
-
+'''
 $ sudo pip install virtualenv
-
+'''
 Una vez obtenido virtualenv
-
+'''
 $ cd ChallengerAPIRest
 $ virtualenv Challenger
 $ source bin/activate
-
+'''
 Instalamos dependencias
-
+'''
 (Challenger)$ pip install -r config/requeriments.txt
-
+'''
 Creamos Base de datos
-
+'''
 (Challenger)$ python manage.py makemigrations
 (Challenger)$ python manage.py migrate
-
+'''
 
 Si quiere crear super usuario
-
+'''
 (Challenger)$ python manage.py createsuperuser
-
+'''
 Ya esta listo para su funcionamiento
+'''
 (Challenger)$ python manage.py runserver
-
+'''
 ## Test
 
 Aplicar el siguiente comando para ejecutar los test:
@@ -45,9 +46,9 @@ Aplicar el siguiente comando para ejecutar los test:
 (Challenger)$ python manage.py -test
 
 Si se quiere ejecutar con más detalles:
-
-python manage.py -test -v 2
-
+'''
+(Challenger)$ python manage.py -test -v 2
+'''
 
 ## URLS ACTIVA
 
@@ -57,7 +58,7 @@ METHOD POST
 Crea una nueva solicitud en el sistema, si el email no esta registrado se crea nuevo usuario,
 se actualiza sus teléfono o dirección
 Ejemplo
-
+'''
 {
   'title': 'Título de la solicitud del presupuesto' (opcional),
   'descripción': 'Descripción de la solicitud del presupuesto',
@@ -66,7 +67,7 @@ Ejemplo
   'phone': 'Teléfono del usuario',
   'address': 'Dirección del usuario'
 }
-
+'''
 METHOD GET
 Solicita todo los email del sistema
 
@@ -80,14 +81,14 @@ Solicita todo los email que hay en el sistema con ese usuario
 
 METHOD POST
 Actualiza el título, descripción o categoría de la solicitud de presupuesto identificada por el uuid
-
+'''
 {
    'uuid': 'identifacador de la solicitud de presupuesto',
    'title': 'Título de la solicitud del presupuesto' (opcional),
    'descripción': 'Descripción de la solicitud del presupuesto' (opcional),
    'category: 'Categoría de la solicitud del presupuesto' (opcional),
 }
-
+'''
 
 ### /api/1.0/budget/_uuid_/
 
