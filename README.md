@@ -48,6 +48,7 @@ Si se quiere ejecutar con más detalles:
 
 python manage.py -test -v 2
 
+
 ## URLS ACTIVA
 
 ### /api/1.0/budgets/
