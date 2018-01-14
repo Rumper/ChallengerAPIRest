@@ -70,7 +70,7 @@ Ejemplo
 METHOD GET
 Solicita todo los email del sistema
 
-### /api/1.0/budgets/"email"/
+### /api/1.0/budgets/_email_/
 
 METHOD GET
 Solicita todo los email que hay en el sistema con ese usuario
@@ -89,7 +89,7 @@ Actualiza el título, descripción o categoría de la solicitud de presupuesto i
 }
 
 
-### /api/1.0/budget/"uuid"/
+### /api/1.0/budget/_uuid_/
 
 METHOD PUT
 Publica la solicitud de presupuesto identificado por uuid si es validado, en caso contrario informa de error.
@@ -98,7 +98,7 @@ METHOD DELETE
 Descarta la solicitud de presupuesto identificado por uuid si es validado, en caso contrario informa de error.
 
 
-### /api/1.0/suggest_budget/"uuid"/
+### /api/1.0/suggest_budget/_uuid_/
 
 Sugiere una categoria o varias para la solicitud de presupuesto por el identificador uuid
 
