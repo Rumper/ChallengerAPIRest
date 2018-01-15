@@ -75,7 +75,7 @@ METHOD GET
 
 Request all system emails.
 
-### /api/1.0/budgets/_email_/
+### /api/1.0/budgets/_\<email\>_/
 
 METHOD GET
 
@@ -97,7 +97,7 @@ Update the title, description or category of the budget request identified by th
     }
 
 
-### /api/1.0/budget/_uuid_/
+### /api/1.0/budget/_\<uuid\>_/
 
 METHOD PUT
 
