@@ -107,7 +107,7 @@ METHOD DELETE
 
 Discard the budget request identified by _uuid_ passed in the url. If it is validated, otherwise it reports error.
 
-### /api/1.0/suggest_budget/_<<uuid>>_/
+### /api/1.0/suggest_budget/_\<uuid\>_/
 
 METHOD GET
 
