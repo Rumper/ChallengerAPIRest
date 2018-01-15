@@ -1,0 +1,37 @@
+[
+  {
+    "model": "budget.Categories",
+    "pk": 1,
+    "fields": {
+      "name": "reformas cocinas"
+    }
+  },
+  {
+    "model": "budget.Categories",
+    "pk": 2,
+    "fields": {
+      "name": "construcción casas"
+    }
+  },
+  {
+    "model": "budget.Categories",
+    "pk": 3,
+    "fields": {
+      "name": "reformas baños"
+    }
+  },
+  {
+    "model": "budget.Categories",
+    "pk": 4,
+    "fields": {
+      "name": "aire acondicionado"
+    }
+  },
+  {
+    "model": "budget.Categories",
+    "pk": 5,
+    "fields": {
+      "name": "calefacción"
+    }
+  }
+]
