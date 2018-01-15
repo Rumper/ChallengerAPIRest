@@ -61,7 +61,7 @@ If you want to see test with more details.
 
 METHOD POST
 
-Create a new request in the system, if the email is not registered a new user is created,
+Create a new request in the system, if the email isn't registered a new user is created,
 your phone or address is updated.
 
 #### Example
