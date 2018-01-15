@@ -43,6 +43,10 @@ If you want to create superuser but it isn't necessary.
 
     (Challenger)$ python manage.py createsuperuser
 
+Update translations
+
+    (Challenger)$ python manage.py compilemessages
+
 It is ready for operation.
 
     (Challenger)$ python manage.py runserver
