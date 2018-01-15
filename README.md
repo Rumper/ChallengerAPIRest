@@ -50,7 +50,7 @@ If you want to see test with more details.
     (Challenger)$ python manage.py -test -v 2
 
 
-## URLS ACTIVA
+## URLS ACTIVE
 
 ### /api/1.0/budgets/
 
