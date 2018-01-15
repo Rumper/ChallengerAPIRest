@@ -8,23 +8,28 @@ Necessary to have Python 3.5 or higher.
 
     $ git clone https://github.com/Rumper/ChallengerAPIRest.git
 
-Create virtual machine.
+### Create virtual machine.
 
-(In case of not having it installed)
+Execute virtualenv with Python 3.5 or higher
 
-    $ sudo pip install virtualenv
-
-Once obtained virtualenv.
+#### Linux:
 
     $ cd ChallengerAPIRest
     $ virtualenv Challenger
     $ source bin/activate
 
-Install dependencies.
-
     (Challenger)$ pip install -r config/requeriments.txt
 
-Create Database.
+#### Window:
+
+    $ cd ChallengerAPIRest
+    $ virtualenv Challenger
+    $ Challenger/Scripts/activate
+
+    (Challenger)$ cd config
+    (Challenger)$ pip install -r requeriments.txt
+
+### Create Database.
 
     (Challenger)$ python manage.py makemigrations
     (Challenger)$ python manage.py migrate
