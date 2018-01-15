@@ -116,3 +116,4 @@ Suggest a category or several for the budget request by the identifier _uuid_ pa
 ## License
 
 This project is subject to the GPLv3 license see more in LINCENSE.
+
