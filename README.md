@@ -63,7 +63,7 @@ your phone or address is updated.
 
 
     {
-      'title': 'Title of the budget request' (optional)),
+      'title': 'Title of the budget request' (optional),
       'description': 'Description of the budget request',
       'category: 'Category of the budget request '(optional),
       'email': 'User's email',
