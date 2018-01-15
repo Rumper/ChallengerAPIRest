@@ -15,7 +15,7 @@ Execute virtualenv with Python 3.5 or higher
 #### Linux:
 
     $ cd ChallengerAPIRest
-    $ virtualenv Challenger
+    $ virtualenv --python=<Path of python3.X> Challenger
     $ source bin/activate
 
     (Challenger)$ pip install -r config/requeriments.txt
@@ -23,7 +23,7 @@ Execute virtualenv with Python 3.5 or higher
 #### Window:
 
     $ cd ChallengerAPIRest
-    $ virtualenv Challenger
+    $ virtualenv --python=<Path of python3.X> Challenger
     $ Challenger/Scripts/activate
 
     (Challenger)$ cd config
