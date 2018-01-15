@@ -34,6 +34,11 @@ Execute virtualenv with Python 3.5 or higher
     (Challenger)$ python manage.py makemigrations
     (Challenger)$ python manage.py migrate
 
+LoadData
+Categories added initially: aire acondicionado, calefacción, construcción casas, reformas baños, reformas cocinas
+
+    (Challenger)$ python manage.py loaddata initial_data.json
+
 If you want to create superuser but it isn't necessary.
 
     (Challenger)$ python manage.py createsuperuser
