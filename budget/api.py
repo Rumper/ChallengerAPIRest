@@ -237,11 +237,11 @@ class BudgetSuggest(APIView, Utils):
             dict_info = [{'Categoría':k, 'Descripción': v}
                          for k, v in all_budgets.values('category__name', 'description') if k]
             Recommendation.append(dict_info)
-        category_suggest = Recommendation.predict(budget.description)
+        categories_suggest = Recommendation.predict(budget.description)
 
-        if category_suggest:
+        if categories_suggest:
             context = {
-                'categories_suggest': category_suggest
+                'categories_suggest': categories_suggest
             }
             return Response(context, status=status.HTTP_200_OK)
         else:
