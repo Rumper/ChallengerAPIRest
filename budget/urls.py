@@ -10,5 +10,5 @@ budget_urlpatterns = [
     path('api/1.0/budget/', BudgetAPI.as_view()),
     path('api/1.0/budget/<slug:uuid>/', BudgetAPI.as_view()),
 
-    path('api/1.0/suggest_budget/<slug:uuid>/', BudgetSuggest.as_view())
+    path('api/1.0/suggest_categories/<slug:uuid>/', BudgetSuggest.as_view())
 ]
