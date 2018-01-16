@@ -145,6 +145,6 @@ class BudgetTest(TestCase):
         category_suggest = contentbase.predict("quiero quitar la bañera y poner una mampara con un plato de ducha")
         self.assertIn("reformas baños", category_suggest)
 
-        response = self.client.get('/api/1.0/suggest_budget/%s/' % self.UUID2)
+        response = self.client.get('/api/1.0/suggest_categories/%s/' % self.UUID2)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertIn( "construcción casas", response.data['categories_suggest'])
