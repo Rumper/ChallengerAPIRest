@@ -16,7 +16,7 @@ def home(request):
                         'method': ["POST", "PUT", "DELETE"],
                     },
                     {
-                        'url': "/api/1.0/suggest_budget/",
+                        'url': "/api/1.0/suggest_categories/",
                         'method': ["POST"],
                     }
                 ]})
